@@ -1,0 +1,16 @@
+{
+  "name": "backend-dev-project",
+  "version": "1.0.0",
+  "description": "learn backend and build backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "vinay kumar",
+  "license": "ISC"
+}
