@@ -9,3 +9,32 @@ key to remember : ( wrap in try-catch )
 where the program waits for the database query to complete before moving on. So, we should async/await which allows for non-blocking execution, enabling the program to continue with other tasks while waiting for the database response. 
 
 key to remember :  ( always remember the database is in another continent, so use async await)
+
+
+
+
+
+//
+
+another way to connect db index.js file
+
+/*
+import express from "express";
+
+const app = express()(async () => {
+  try {
+    await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`);
+    app.on("error: app", (error) => {
+      console.log("error: app is not able to communicate to db", error);
+      throw error;
+    });
+
+    app.listen(process.env.PORT, () => {
+      console.log(`APP is listening on port ${process.env.PORT}`);
+    });
+  } catch (error) {
+    console.log("ERROR ON DB CONNECT", error);
+    throw error;
+  }
+})();
+*/
